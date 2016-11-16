@@ -1,5 +1,5 @@
 # isaachook.me
 
-Main Website - http://isaachook.me/
+Main Website - isaachook.me
 
-Blog - http://blog.isaachook.me/
+Blog - blog.isaachook.me
