@@ -1,2 +1,5 @@
 # isaachook.me
-My website 
+
+Main Website - http://isaachook.me
+
+Blog - http://blog.isaachook.me
