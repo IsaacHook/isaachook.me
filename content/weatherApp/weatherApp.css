@@ -1,0 +1,7 @@
+body{ 
+  background: url("https://a.desktopprassets.com/wallpapers/e9f1a9301187a94b090cdb3d50a219a372964db2/preview_clear-sky-nature-hd-wallpaper-2560x1440-3829.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

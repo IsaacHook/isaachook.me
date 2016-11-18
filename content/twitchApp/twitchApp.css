@@ -1,0 +1,33 @@
+body {
+	padding-top: 6em;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+	font-weight: 600;
+}
+
+.text-container {
+	background-color: red;
+	height: 100%;	
+}
+
+p, .text-container{
+       vertical-align: middle;
+    display: inline-block;
+}
+
+img {
+	border-radius: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.box {
+	height: 70px;
+	margin-top: 0.3em;
+	background: #fd746c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #fd746c , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #fd746c , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
