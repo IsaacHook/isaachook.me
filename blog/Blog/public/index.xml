@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Isaac Hook</title>
+    <link>/</link>
+    <description>Recent content on Isaac Hook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jul 2016 08:37:47 +1000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Example Note</title>
+      <link>/blog/Example%20Note/</link>
+      <pubDate>Fri, 15 Jul 2016 08:37:47 +1000</pubDate>
+      
+      <guid>/blog/Example%20Note/</guid>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt;
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;/&gt;&lt;meta name=&#34;exporter-version&#34; content=&#34;Evernote Mac 6.7.1 (453574)&#34;/&gt;&lt;meta name=&#34;keywords&#34; content=&#34;Cat, Published&#34;/&gt;&lt;meta name=&#34;author&#34; content=&#34;isaachook&#34;/&gt;&lt;meta name=&#34;created&#34; content=&#34;2016-07-04 01:21:00 +0000&#34;/&gt;&lt;meta name=&#34;updated&#34; content=&#34;2016-07-04 02:42:47 +0000&#34;/&gt;&lt;title&gt;Example Note&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;&amp;lt;abc&amp;gt;&lt;/div&gt;&lt;div&gt;Some example text&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;YouTube Video&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&#34;https://youtu.be/tntOCGkgt98&#34; rev=&#34;en_rl_small&#34;&gt;https://youtu.be/tntOCGkgt98&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Image&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;img src=&#34;../Example%20Note.resources/imgres.jpg&#34; height=&#34;177&#34; width=&#34;284&#34;/&gt;&lt;/div&gt;&lt;div&gt;some text&lt;/div&gt;&lt;div&gt;more text&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title>Example Note</title>
+      <link>/cat/Example%20Note/</link>
+      <pubDate>Fri, 15 Jul 2016 08:37:47 +1000</pubDate>
+      
+      <guid>/cat/Example%20Note/</guid>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt;
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;/&gt;&lt;meta name=&#34;exporter-version&#34; content=&#34;Evernote Mac 6.7.1 (453574)&#34;/&gt;&lt;meta name=&#34;keywords&#34; content=&#34;Cat, Published&#34;/&gt;&lt;meta name=&#34;author&#34; content=&#34;isaachook&#34;/&gt;&lt;meta name=&#34;created&#34; content=&#34;2016-07-04 01:21:00 +0000&#34;/&gt;&lt;meta name=&#34;updated&#34; content=&#34;2016-07-04 02:42:47 +0000&#34;/&gt;&lt;title&gt;Example Note&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;&amp;lt;abc&amp;gt;&lt;/div&gt;&lt;div&gt;Some example text&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;YouTube Video&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&#34;https://youtu.be/tntOCGkgt98&#34; rev=&#34;en_rl_small&#34;&gt;https://youtu.be/tntOCGkgt98&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Image&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;img src=&#34;../Example%20Note.resources/imgres.jpg&#34; height=&#34;177&#34; width=&#34;284&#34;/&gt;&lt;/div&gt;&lt;div&gt;some text&lt;/div&gt;&lt;div&gt;more text&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title>testHTML</title>
+      <link>/blog/testHTML/</link>
+      <pubDate>Wed, 13 Jul 2016 20:09:15 +1000</pubDate>
+      
+      <guid>/blog/testHTML/</guid>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt;
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;/&gt;&lt;meta name=&#34;exporter-version&#34; content=&#34;Evernote Mac 6.7.1 (453574)&#34;/&gt;&lt;meta name=&#34;author&#34; content=&#34;isaachook&#34;/&gt;&lt;meta name=&#34;created&#34; content=&#34;2014-01-09 21:21:27 +0000&#34;/&gt;&lt;meta name=&#34;updated&#34; content=&#34;2014-01-12 08:43:41 +0000&#34;/&gt;&lt;title&gt;Artificial Intelligence&lt;/title&gt;&lt;/head&gt;&lt;body style=&#34;word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;&#34;&gt;
+&lt;div&gt;Conferences&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;People&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a shape=&#34;rect&#34; href=&#34;http://research.it.uts.edu.au/magic/Mary-Anne/&#34; target=&#34;_blank&#34;&gt;http://research.it.uts.edu.au/magic/Mary-Anne/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;Universities&lt;br clear=&#34;none&#34;/&gt;
+&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style=&#34;color: rgb(0, 51, 0);&#34;&gt;Areas&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;Hardware&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How is the brain built?&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How are computers currently built?&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How to build computers like brains?&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://www.extremetech.com/extreme/105067-mit-creates-brain-chip&#34;&gt;&lt;span style=&#34;-evernote-last-insertion-point:true;&#34;/&gt;&lt;img src=&#34;http://blog.isaachook.me/images/cc.jpg&#34; height=&#34;280&#34; width=&#34;672&#34;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;div&gt;              &lt;/div&gt;
+&lt;div&gt;               &lt;/div&gt;
+&lt;div&gt;               &lt;a shape=&#34;rect&#34; href=&#34;http://apt.cs.man.ac.uk/projects/SpiNNaker/project/&#34; target=&#34;_blank&#34;&gt;http://apt.cs.man.ac.uk/projects/SpiNNaker/project/&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://blog.isaachook.me/images/cc.jpg&#34; height=&#34;255&#34; width=&#34;821&#34;/&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown examples</title>
+      <link>/blog/Markdown-examples/</link>
+      <pubDate>Tue, 05 Jul 2016 22:41:43 +1000</pubDate>
+      
+      <guid>/blog/Markdown-examples/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code&gt;Headings
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;Emphasis
+*italics* or _italics_
+**strong emphasis** or __strong emphasis__
+**combined _emphasis_**
+~~Strikethrough~~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;.
+&lt;strong&gt;strong emphasis&lt;/strong&gt; or &lt;strong&gt;strong emphasis&lt;/strong&gt;.
+&lt;strong&gt;combined &lt;em&gt;emphasis&lt;/em&gt;&lt;/strong&gt;.
+&lt;del&gt;Strikethrough&lt;/del&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Useful commands</title>
+      <link>/blog/Useful-commands/</link>
+      <pubDate>Tue, 05 Jul 2016 22:41:23 +1000</pubDate>
+      
+      <guid>/blog/Useful-commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting Up A Blog</title>
+      <link>/blog/Setting-Up-A-Blog/</link>
+      <pubDate>Tue, 05 Jul 2016 18:54:04 +1000</pubDate>
+      
+      <guid>/blog/Setting-Up-A-Blog/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Register domain name (I used godaddy)&lt;/li&gt;
+&lt;li&gt;Register for Amazon Web Services&lt;/li&gt;
+&lt;li&gt;Some other complicated stuff to setup AWS&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once you have a domain name you need to find yourself a website template and a way to upload content.&lt;/p&gt;
+
+&lt;p&gt;Most common way of doing this would be to use a wordpress website.
+Wordpress is a CMS which allows you to easily upload content, however this means you would have to host the wordpress CMS somewhere.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, you could find a way of generating static websites and host them on AWS S3.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install hugo&lt;/li&gt;
+&lt;li&gt;Download hugo template&lt;/li&gt;
+&lt;li&gt;Write posts&lt;/li&gt;
+&lt;li&gt;Generate public folder to be uploaded&lt;/li&gt;
+&lt;li&gt;Upload public folder to AWS&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blog/Artificial%20Intelligence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/Artificial%20Intelligence/</guid>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt;
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;/&gt;&lt;meta name=&#34;exporter-version&#34; content=&#34;Evernote Mac 6.7.1 (453574)&#34;/&gt;&lt;meta name=&#34;author&#34; content=&#34;isaachook&#34;/&gt;&lt;meta name=&#34;created&#34; content=&#34;2014-01-09 21:21:27 +0000&#34;/&gt;&lt;meta name=&#34;updated&#34; content=&#34;2014-01-12 08:43:41 +0000&#34;/&gt;&lt;title&gt;Artificial Intelligence&lt;/title&gt;&lt;/head&gt;&lt;body style=&#34;word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;&#34;&gt;
+&lt;div&gt;Conferences&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;People&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a shape=&#34;rect&#34; href=&#34;http://research.it.uts.edu.au/magic/Mary-Anne/&#34; target=&#34;_blank&#34;&gt;http://research.it.uts.edu.au/magic/Mary-Anne/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;Universities&lt;br clear=&#34;none&#34;/&gt;
+&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style=&#34;color: rgb(0, 51, 0);&#34;&gt;Areas&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;Hardware&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How is the brain built?&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How are computers currently built?&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;color: rgb(51, 153, 102);&#34;&gt;How to build computers like brains?&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://www.extremetech.com/extreme/105067-mit-creates-brain-chip&#34;&gt;&lt;span style=&#34;-evernote-last-insertion-point:true;&#34;/&gt;&lt;img src=&#34;/img/Screen%20Shot%202014-01-12%20at%207.25.02%20pm.png&#34; height=&#34;280&#34; width=&#34;672&#34;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;div&gt;              &lt;/div&gt;
+&lt;div&gt;               &lt;/div&gt;
+&lt;div&gt;               &lt;a shape=&#34;rect&#34; href=&#34;http://apt.cs.man.ac.uk/projects/SpiNNaker/project/&#34; target=&#34;_blank&#34;&gt;http://apt.cs.man.ac.uk/projects/SpiNNaker/project/&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br clear=&#34;none&#34;/&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/img/Screen%20Shot%202014-01-12%20at%207.28.16%20pm.png&#34; height=&#34;255&#34; width=&#34;821&#34;/&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

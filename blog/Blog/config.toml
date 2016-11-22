@@ -1,0 +1,13 @@
+baseurl = "http://replace-this-with-your-hugo-site.com"
+languageCode = "en-us"
+title = "Isaac Hook"
+SectionPagesMenu = "main"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  	description = "Tesla's Awesome Hugo Site"
+  	author = "Nikola Tesla"
+	
