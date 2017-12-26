@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.31.1" />
+    <meta name="description" content="">
+<meta name="author" content="Isaac Hook">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Understanding the how the Internet Works :: Isaac Hook</title>
+    
+    
+    <link href="/css/nucleus.css?1514064430" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1514064430" rel="stylesheet">
+    <link href="/css/hybrid.css?1514064430" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1514064430" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1514064430" rel="stylesheet">
+    <link href="/css/auto-complete.css?1514064430" rel="stylesheet">
+    <link href="/css/theme.css?1514064430" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1514064430" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1514064430"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-74396515-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body class="" data-url="/wifi-projects/understanding-how-the-internet-works/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1514064430"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1514064430"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/isaachook.me";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1514064430"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wifi-projects/" title=" Wifi Projects" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/wifi-projects/">
+          <i class='fa fa-wifi'></i> Wifi Projects
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wifi-projects/hello-world-with-the-esp8266/" title="Hello World with the ESP8266" class="dd-item ">
+        <a href="/wifi-projects/hello-world-with-the-esp8266/">
+        Hello World with the ESP8266
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wifi-projects/uploading-arduino-ide-to-esp8266/" title="Uploading the Arduino IDE to the ESP8266" class="dd-item ">
+        <a href="/wifi-projects/uploading-arduino-ide-to-esp8266/">
+        Uploading the Arduino IDE to the ESP8266
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wifi-projects/understanding-how-the-internet-works/" title="Understanding the how the Internet Works" class="dd-item active">
+        <a href="/wifi-projects/understanding-how-the-internet-works/">
+        Understanding the how the Internet Works
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/wifi-projects/wifi-salt-lamp/" title="Wifi Salt Lamp (Part 1)" class="dd-item ">
+        <a href="/wifi-projects/wifi-salt-lamp/">
+        Wifi Salt Lamp (Part 1)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Isaac Hook</a> > <a href='/wifi-projects/'> Wifi Projects</a> > Understanding the how the Internet Works
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#at-a-high-level">At a High Level</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Understanding the how the Internet Works</h1>
+          
+
+        
+
+
+
+
+<p>To understand exactly what I can do with the ESP8266 or any other WIFI module I wanted to get a clearer
+picture of how the Internet actually works.  At the moment, there are a bunch of terms which I only have
+a fuzzy understanding of (web server, web client, DNS, CNAME, HTTP&hellip;) and I&rsquo;m not sure how all the components of
+the Internet fit together (what actually is a modem/router?).</p>
+
+<p>In writing this I hope to answer:</p>
+
+<ul>
+<li>At a high level how does the Internet actually work?</li>
+<li>If the Internet was rebuilt from scratch today, what would be the simplest example of this? Two computers over one wire?</li>
+<li>How do all the components fit together?</li>
+<li>What are the components?</li>
+<li>Get an understanding of all the terminology</li>
+<li>Work out:
+
+<ul>
+<li>Could I host an external website on a WIFI module?</li>
+<li>If I connected the WIFI module to a WIFI network what are the ways I can communicate with other computers on that network?</li>
+<li>If I wanted to turn a module into a simple Internet connected switch,
+what would be the best way to do this so that setup is super simple and can be accessed anywhere?</li>
+</ul></li>
+</ul>
+
+<h4 id="at-a-high-level">At a High Level</h4>
+
+<p><a href="https://www.khanacademy.org/partner-content/code-org/internet-works">Khan Academy</a> - Nice introduction<br />
+<a href="https://www.youtube.com/watch?v=7_LPdttKXPc">How the Internet Works in 5 Minutes</a> - A nice 5min intro video
+<a href="http://www.nylxs.com/docs/cmpnet.pdf">Computer Networking A Top-Down Approach</a>
+<a href="https://blog.hubspot.com/marketing/how-the-internet-works#sm.001h7m2te15bbf9fuci1ozkdr8fzy">How the Internet Works: An Explanation Even Non-Techies Can Understand</a></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/wifi-projects/uploading-arduino-ide-to-esp8266/" title="Uploading the Arduino IDE to the ESP8266"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/wifi-projects/wifi-salt-lamp/" title="Wifi Salt Lamp (Part 1)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1514064430"></script>
+    <script src="/js/perfect-scrollbar.min.js?1514064430"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1514064430"></script>
+    <script src="/js/jquery.sticky.js?1514064430"></script>
+    <script src="/js/featherlight.min.js?1514064430"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1514064430"></script>
+    <script src="/js/highlight.pack.js?1514064430"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1514064430"></script>
+    <script src="/js/learn.js?1514064430"></script>
+    <script src="/js/hugo-learn.js?1514064430"></script>
+
+    <link href="/mermaid/mermaid.css?1514064430" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1514064430"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+
+  </body>
+</html>
+

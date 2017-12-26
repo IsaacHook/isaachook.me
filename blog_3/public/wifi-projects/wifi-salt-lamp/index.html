@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.31.1" />
+    <meta name="description" content="">
+<meta name="author" content="Isaac Hook">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Wifi Salt Lamp (Part 1) :: Isaac Hook</title>
+    
+    
+    <link href="/css/nucleus.css?1514064430" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1514064430" rel="stylesheet">
+    <link href="/css/hybrid.css?1514064430" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1514064430" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1514064430" rel="stylesheet">
+    <link href="/css/auto-complete.css?1514064430" rel="stylesheet">
+    <link href="/css/theme.css?1514064430" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1514064430" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1514064430"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-74396515-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body class="" data-url="/wifi-projects/wifi-salt-lamp/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1514064430"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1514064430"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/isaachook.me";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1514064430"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/wifi-projects/" title=" Wifi Projects" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/wifi-projects/">
+          <i class='fa fa-wifi'></i> Wifi Projects
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Isaac Hook</a> > <a href='/wifi-projects/'> Wifi Projects</a> > Wifi Salt Lamp (Part 1)
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#top-level-ish-schematic">Top Level-ish Schematic</a></li>
+<li><a href="#voltage-shifter-5v-to-3-3v">Voltage Shifter 5V to 3.3V</a></li>
+<li><a href="#esp8266">ESP8266</a>
+<ul>
+<li><a href="#reset-button">Reset Button</a></li>
+<li><a href="#decoupling-cap">Decoupling Cap</a></li>
+</ul></li>
+<li><a href="#relay-enclosure">Relay &amp; enclosure</a></li>
+<li><a href="#still-to-do">Still To Do:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Wifi Salt Lamp (Part 1)</h1>
+          
+
+        
+
+
+
+
+<p><img src="/images/salt-lamp-working.gif" alt="wifi salt lamp working" title="wifi salt lamp working" /></p>
+
+<p>The end goal of this project is to get a working wifi powerboard.  As a stepping stone I have started with one power point and am using a salt lamp to test.
+This post is a write up of what I have done so far, what I learnt, information I used from datasheets and challenges etc&hellip;</p>
+
+<h4 id="top-level-ish-schematic">Top Level-ish Schematic</h4>
+
+<p>The schematic below shows how all the components fits together.</p>
+
+<p>The setup is pretty simple, there are basically three parts. The voltage shifter which takes 5V
+to 3.3V to keep the ESP8266 happy.  There is the ESP8266 setup itself with the arduino&rsquo;s only purpose being to flash the device with the program.  And there is
+the relay which turns on/off the mains power (controlled by the ESP8266).</p>
+
+<p><img src="/images/salt-lamp-schematic.jpg" alt="wifi salt lamp schematic" title="wifi salt lamp schematic" /></p>
+
+<p>And here is a picture of the actual setup.  The only difference between this and the schematic is that I used a plug instead of a salt lamp directly.
+  Just so that it could be used with other devices.  And also to insulate the relay, to like prevent death and that.</p>
+
+
+<figure class="earlybird">
+    
+        <img src="/images/salt-lamp-part1-setup.jpg" />
+    
+    
+</figure>
+
+
+<p>Mainly for my future reference, here is a list of components used:</p>
+
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ESP8266 esp-01</td>
+<td>Wifi module to control the relay</td>
+</tr>
+
+<tr>
+<td><a href="http://www.ebay.com.au/sch/i.html?_odkw=5V+One+1+Channel+Relay+10A&amp;_osacat=0&amp;_from=R40&amp;_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X5V+One+1+Channel+Relay+10A+optocoupler.TRS0&amp;_nkw=5V+One+1+Channel+Relay+10A+optocoupler&amp;_sacat=0">Relay 250VAC 10A</a></td>
+<td>Control mains power</td>
+</tr>
+
+<tr>
+<td>Arduino Uno</td>
+<td>To flash ESP8266.  Could have used UART serial adapter</td>
+</tr>
+
+<tr>
+<td><a href="https://www.alibaba.com/trade/search?fsb=y&amp;IndexArea=product_en&amp;CatId=&amp;SearchText=+DC+Power+Supply+QJE+PS3005S">Switching Power Supply</a></td>
+<td>Supply 5V and up to 0.5A</td>
+</tr>
+
+<tr>
+<td><a href="https://www.google.com.au/search?sourceid=chrome-psyapi2&amp;rlz=1C5CHFA_enAU504AU504&amp;ion=1&amp;espv=2&amp;ie=UTF-8&amp;q=ua741cp%20op%20amp&amp;oq=ua741cp%20op%20amp">Op Amp: UA741CP</a></td>
+<td>General purpose op amp for voltage shifting circuitry</td>
+</tr>
+
+<tr>
+<td><a href="https://www.fairchildsemi.com/datasheets/TI/TIP41C.pdf">BJT: TIP141C</a></td>
+<td>Medium power BJT for supplying 3.3V, needs to be able to handle &lt;= 1A</td>
+</tr>
+
+<tr>
+<td><a href="http://www.philohome.com/sensors/gp2d12/gp2d12-datasheets/bc548.pdf">BJT: BC548B</a></td>
+<td>Low power BJT for switching relay on/off.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The sections below describe the process of building each section of the circuit and (hopefully) all the questions I had when making it.</p>
+
+<h4 id="voltage-shifter-5v-to-3-3v">Voltage Shifter 5V to 3.3V</h4>
+
+<p>The ESP8266 uses 3.3V and the Relay uses 5V therefore voltage shifting circuitry was needed.  There are a lot of people on the internet
+saying that they were able to use the module with 5V, but for reliability I choose to follow the specs.</p>
+
+<p><img src="/images/salt-lamp-schematic-shifter.jpg" alt="voltage shifter" title="voltage shifter" /></p>
+
+<p>The requirements were:</p>
+
+<ul>
+<li>5V input</li>
+<li>3.3V output</li>
+<li>Variable load impedance</li>
+</ul>
+
+<p>! example</p>
+
+<h4 id="esp8266">ESP8266</h4>
+
+<p>The ESP8266 was setup and flashed using the arduino as described in previous posts (&ldquo;hello world&hellip;&rdquo; and &ldquo;uploading arduino ide&hellip;&rdquo;) with a few additions.</p>
+
+<p><img src="/images/salt-lamp-schematic-esp8266.jpg" alt="esp8266" title="esp8266" /></p>
+
+<h5 id="reset-button">Reset Button</h5>
+
+<p>The reset button was hooked up to a pull up resistor and button.  If you&rsquo;ve heard the term pull up resistor numerous times before but never
+sat down to understand what it means / why we need one / how to decide on the value, then there is a <a href="https://learn.sparkfun.com/tutorials/pull-up-resistors">great post here</a>.</p>
+
+<p>The most common time you use a pullup resitor is when you use a button.  This is because when you use a button you want your input pin to
+read high when the button is not pressed and low when it is pressed (assuming pullup).  Therefore we need the resistor for the low state
+when the pin is pulled to ground (without it VCC would be grounded).  A picture might make that explanation more clear.</p>
+
+<p><img src="/images/pullupresistor.jpg" alt="pullup resistor" title="pullup resistor" /></p>
+
+<p>The value of the resistor is chosen with 3 competing objectives in mind:</p>
+
+<ul>
+<li>Want a low amount of current to be used when button is pushed low (large resistor)</li>
+<li>When high, want to ensure that the voltage divider with input pin allows pin to be held high (small resistor)</li>
+<li>Want to make sure switching speed is not impacted (small resistor)</li>
+</ul>
+
+<p>In our case 1K is an okay choice because:</p>
+
+<ul>
+<li>Current on button press would be small: 5V / 1K = 5mA</li>
+<li>On button up, voltage divider would give input pin 3.25V: 3.3 (<sup>66</sup>&frasl;<sub>67</sub>) = 3.25V (<a href="http://www.esp8266.com/viewtopic.php?f=13&amp;t=9006&amp;start=4">apparently</a> input impedance can be calculated from the
+input leakage current on the <a href="http://download.arduino.org/products/UNOWIFI/0A-ESP8266-Datasheet-EN-v4.3.pdf">data sheet</a> R = 3.3 / 50n = 66K).  To be checked experimentally,
+couldn&rsquo;t find this info elsewhere in the data sheets.</li>
+<li>Don&rsquo;t really care about switching speed (DC)</li>
+</ul>
+
+<h5 id="decoupling-cap">Decoupling Cap</h5>
+
+<p>It took me quite a while to figure out I needed this guy.  After a lot of trial and error I worked out, that even if the salt lamp
+was not connected to the breadboard (e.g just plugged into the mains), if I switched the salt lamp on it would reset the ESP8266 module!</p>
+
+<p>The video below shows me successfully changing the state of the GPIO pin initially (led pin text changes between on and off).
+I then switch the lamp on (which is not connected to the circuit in any way).  When I go back to the web UI to change the state of the pin,
+the ESP8266 has lost connection (does not change).</p>
+
+<video style="display:block; margin: 0 auto;" controls loop>
+  <source src="/images/salt-lamp_decoupling_cap.mp4" type="video/mp4" width="600px">
+Your browser does not support the video tag.
+</video>
+
+<p>That is, even with the insulated power cables there was still enough noise to interupt the ESP&rsquo;s power.  Once I placed a decoupling cap (1uF)
+next to the module&rsquo;s power supply it started operating normally again.  This is actually what Espressif recommends you do anyway: <a href="https://espressif.com/en/products/hardware/esp8266ex/overview">&ldquo;What factors must I consider when designing a robust power supply for the ESP8266?&rdquo;</a>.</p>
+
+<h4 id="relay-enclosure">Relay &amp; enclosure</h4>
+
+<p>As the end goal of this project is to make a wifi powerboard the relay used would need to have specs to handle <a href="https://en.wikipedia.org/wiki/AS/NZS_3112">Australian mains
+electricity</a>, 240V and 10A.  <a href="http://www.ebay.com.au/sch/i.html?_odkw=5V+One+1+Channel+Relay+10A&amp;_osacat=0&amp;_from=R40&amp;_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X5V+One+1+Channel+Relay+10A+optocoupler.TRS0&amp;_nkw=5V+One+1+Channel+Relay+10A+optocoupler&amp;_sacat=0">Any relay on ebay</a>
+that meets these specs should be fine.</p>
+
+<p>The schematic below shows how everything was wired up.  The BJT was used to isolate the GPIO pin from the ESP8266 from the input to the relay.</p>
+
+<p><img src="/images/salt-lamp-relay.jpg" alt="relay" /></p>
+
+<p>Pictured below is the relay I used along with a simplified schematic of how it is working.  Basically the low voltage controller inputs
+are isolated from the high voltage mains.  Setup VCC and GND and then use active low IN1 to turn the switch on and off.  The ports NO and NC
+stand for normally open and normally closed respectively with COM being the common port.  When IN1 is active the NO and COM are connected
+otherwise NC and COM are connected.  The schematic is overly simplified because the relay is actually <a href="https://en.wikipedia.org/wiki/Opto-isolator">optocoupled</a> as well, meaning a photodiode
+turns on the magnetic coil.</p>
+
+<p><img src="/images/salt-lamp_relay_and_schematic.gif" alt="relay and simplified schematic" /></p>
+
+<p>To prevent accidentally touching the relay live I chucked it in a PVC pipe and connected a plug to it.  Wiring it up should hopefully be obvious.</p>
+
+<p><img src="/images/salt-lamp-relay_insulated.jpg" alt="relay insulated" /></p>
+
+<h4 id="still-to-do">Still To Do:</h4>
+
+<ul>
+<li>Update web control
+
+<ul>
+<li>be able to control on/off speed</li>
+<li>be able to access from the internet</li>
+<li>add selector to connect to wifi network</li>
+<li>add option to disconnect from current network</li>
+</ul></li>
+<li>Work out how to get the wifi module to load with program already flashed (have to re-program each time at the moment)</li>
+<li>240V to 5V converter</li>
+<li>Replace voltage divider in voltage shifter with zener diode</li>
+<li>Add current sensing module</li>
+<li>Add voltage divider to receiver</li>
+<li>Current limiting BJT</li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/wifi-projects/understanding-how-the-internet-works/" title="Understanding the how the Internet Works"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/wifi-projects/hello-world-with-the-esp8266/" title="Hello World with the ESP8266" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1514064430"></script>
+    <script src="/js/perfect-scrollbar.min.js?1514064430"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1514064430"></script>
+    <script src="/js/jquery.sticky.js?1514064430"></script>
+    <script src="/js/featherlight.min.js?1514064430"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1514064430"></script>
+    <script src="/js/highlight.pack.js?1514064430"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1514064430"></script>
+    <script src="/js/learn.js?1514064430"></script>
+    <script src="/js/hugo-learn.js?1514064430"></script>
+
+    <link href="/mermaid/mermaid.css?1514064430" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1514064430"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+
+  </body>
+</html>
+

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+    <title>Hello World with the ESP8266</title>
+    <link href="http://isaachook.me/css/nucleus.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/hybrid.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/featherlight.min.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/horsey.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/theme.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/hugo-theme.css" rel="stylesheet">
+    <link href="http://isaachook.me/css/custom.css" rel="stylesheet">
+    <script src="http://isaachook.me/js/jquery-2.x.min.js"></script>
+
+    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left {display:none !important;}</style>
+    
+
+  </head>
+
+  <body class="" data-url="/wifi-projects/hello-world-with-the-esp8266/">
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+      
+        
+      
+      
+      
+      
+
+      
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/circuit-design/">
+        <a href="/circuit-design/">
+          <span>
+            
+              <i class="fa fa-microchip"></i>
+            
+             Circuit Design
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/circuit-design/bjts/">
+              <a href="/circuit-design/bjts/">
+                <span>Some Title     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/cs231n/">
+        <a href="/cs231n/">
+          <span>
+            
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            
+             CS231n
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/cs231n/taking-the-derivative-of-the-softmax/">
+              <a href="/cs231n/taking-the-derivative-of-the-softmax/">
+                <span>Taking the derivative of the softmax function     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/probability/">
+        <a href="/probability/">
+          <span>
+            
+              <i class="fa fa-balance-scale"></i>
+            
+             Probability
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/probability/random-variables/">
+              <a href="/probability/random-variables/">
+                <span>Random Variables     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+
+      
+        
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/wifi-projects/">
+        <a href="/wifi-projects/">
+          <span>
+            
+              <i class="fa fa-wifi"></i>
+            
+             Wifi Projects
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/wifi-projects/hello-world-with-the-esp8266/">
+              <a href="/wifi-projects/hello-world-with-the-esp8266/">
+                <span>Hello World with the ESP8266     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/wifi-projects/uploading-arduino-ide-to-esp8266/">
+              <a href="/wifi-projects/uploading-arduino-ide-to-esp8266/">
+                <span>Uploading the Arduino IDE to the ESP8266     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/wifi-projects/understanding-how-the-internet-works/">
+              <a href="/wifi-projects/understanding-how-the-internet-works/">
+                <span>Understanding the how the Internet Works     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/wifi-projects/wifi-salt-lamp/">
+              <a href="/wifi-projects/wifi-salt-lamp/">
+                <span>Wifi Salt Lamp (Part 1)     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    
+                    
+                <a href="/wifi-projects/" itemprop="url"><span itemprop="title">Wifi Projects</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> Hello World with the ESP8266</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#communicating-with-the-esp8266">Communicating with the ESP8266</a></li>
+<li><a href="#wiring-up-your-module">Wiring up your module</a></li>
+<li><a href="#sending-your-first-command">Sending your first command</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+    	        <div id="body-inner">
+                
+                <h1>Hello World with the ESP8266</h1>
+                
+
+
+
+<p>The <a href="https://espressif.com/en/products/hardware/esp8266ex/overview">ESP8266</a>
+is an affordable WIFI chip which is the answer to pretty much any question like &ldquo;how do I give this WIFI?&rdquo;.</p>
+
+<p>The chip comes in a variety of modules named esp-XX.  The most common ones are from AI-Thinkers but Espressif Systems (the maker of the chip) also have their own.
+A list of the different modules can be found <a href="http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family">here</a>.</p>
+
+<p>The board in the picture below is the low cost esp-01 module you can buy off <a href="http://www.ebay.com.au/sch/i.html?_odkw=esp8266&amp;_osacat=92074&amp;_from=R40&amp;_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xesp8266+esp-01.TRS0&amp;_nkw=esp8266+esp-01&amp;_sacat=92074">ebay</a> for $2 or so, with
+the antenna, clock, resistors etc already wired up.</p>
+
+<p><img src="/imgs/ESP8266_annotation.png?classes=border,shadow&amp;width=60%" alt="ESP8266_board" /></p>
+
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>VCC</td>
+<td>3.3V</td>
+</tr>
+
+<tr>
+<td>GPIO_0</td>
+<td>General purpose input/output 0</td>
+</tr>
+
+<tr>
+<td>GPIO_2</td>
+<td>General purpose input/output 2</td>
+</tr>
+
+<tr>
+<td>CHIP_PD</td>
+<td>Chip enable</td>
+</tr>
+
+<tr>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+
+<tr>
+<td>RX</td>
+<td>Receive</td>
+</tr>
+
+<tr>
+<td>TX</td>
+<td>Trasmit</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="communicating-with-the-esp8266">Communicating with the ESP8266</h4>
+
+<p>There a bunch of different ways of speaking to the ESP8266 chip according to the <a href="https://espressif.com/en/products/hardware/esp8266ex/resources">datasheet</a>.
+Either via SPI, I2C, or UART, which are all just communication protocols.</p>
+
+<p>On the esp-01 module, only the RX (receive) and TX (transmit) pins required for UART communication are available.  UART stands
+for universal asynchronous receiver/transmitter, a good explanation of it can be found at <a href="http://www.circuitbasics.com/basics-uart-communication/">circuit basic</a> along
+with explanations of the SPI and I2C protocols.</p>
+
+<p>To connect your ESP8266 module to your computer you can either use a <a href="http://www.ebay.com.au/sch/i.html?_odkw=uart&amp;_osacat=0&amp;_from=R40&amp;_trksid=p2045573.m570.l1313.TR1.TRC0.A0.H0.Xusb+to+uart.TRS0&amp;_nkw=usb+to+uart&amp;_sacat=0">USB to UART serial adapter</a>
+or if you have an Arduino Uno than you can use your Arduino Uno as a serial adapter.</p>
+
+<h4 id="wiring-up-your-module">Wiring up your module</h4>
+
+<p>The schematic below shows how to wire up your module with the Arduino Uno.</p>
+
+<iframe frameborder='0' height='448' marginheight='0' marginwidth='0' scrolling='no' src='https://circuits.io/circuits/3654955-wiring-up-the-esp8266/embed#breadboard' width='650'></iframe>
+
+<p>There are a couple of things I found confusing initially when linking everything up.</p>
+
+<p><strong>Should RX -&gt; TX or RX -&gt; RX?</strong><br />
+If you wanted to think about this intuitively you could probably argue either of these equally.  When we are connecting devices together
+you actually connect RX -&gt; TX and vice versa.  However in our case we are not really using the Arduino, we are just using it&rsquo;s serial adapter capability.
+Therefore we actually wire up RX -&gt; RX and TX -&gt; TX.</p>
+
+<p><strong>ESP8266 needs to be powered via an external source</strong><br />
+The Arduino does have a 3.3V output port, however it can only provide up to <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">50mA of current</a>.
+The ESP8266 is super thirsty and needs on average <a href="https://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf">80mA of current</a>.</p>
+
+<p><strong>A voltage divider needs to be used on the RX line</strong><br />
+Arduino is a 5V board and the ESP8266 is a 3.3V board, therefore a voltage divider needs to be used to match the logic levels.
+There are also a couple of other options that could be used instead of a voltage divider (<a href="http://www.ebay.com.au/sch/i.html?_from=R40&amp;_trksid=p2050601.m570.l1313.TR10.TRC0.A0.H0.Xiphone+se.TRS0&amp;_nkw=logic+converter+5v+3.3v&amp;_sacat=0">Logic converter</a>,
+Zener diode).</p>
+
+<p><strong>How come this works without boosting the voltage on the TX line to 5V</strong><br />
+Arduino defines logic HIGH as a voltage <a href="https://www.arduino.cc/en/Reference/Constants">greater than 3V</a>.
+Since we are using 3.3V there is no need to step this up.</p>
+
+<h4 id="sending-your-first-command">Sending your first command</h4>
+
+<p>Now that the module is all wired up we can start sending it commands.
+The chip should come pre-loaded with firmware that allows you to send AT commands.
+  AT commands are just an instruction set used for controlling modems.  The full list available
+can be found in <a href="https://espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf">Espressif&rsquo;s documentation</a>.</p>
+
+<p>Here are the steps to get it working:</p>
+
+<ul>
+<li>Upload the bare minimum sketch to the Arduino to clear any previous programs</li>
+<li>Open the serial monitor and select the options &ldquo;Both NL &amp; CR&rdquo; and &ldquo;115200 baud&rdquo;
+<img src="/imgs/serial_monitor.jpg" alt="Serial Monitor" /></li>
+<li>Type AT, hit send and you should see the response OK</li>
+<li>If not touch the RESET pin on the ESP8266 to ground and try again</li>
+</ul>
+
+<video style="display:block; margin: 0 auto;" controls loop>
+    <source src="/imgs/AT_commands.mp4" type="video/mp4" width="600px">
+    Your browser does not support the video tag.
+</video>
+
+
+      
+      </div>
+    </div>
+
+    <div id="navigation">
+        
+        <a class="nav nav-prev" href="http://isaachook.me/wifi-projects"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="http://isaachook.me/wifi-projects/Understanding_the_internet" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="http://isaachook.me/js/clipboard.min.js"></script>
+    <script src="http://isaachook.me/js/perfect-scrollbar.min.js"></script>
+    <script src="http://isaachook.me/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="http://isaachook.me/js/jquery.sticky-kit.min.js"></script>
+    <script src="http://isaachook.me/js/featherlight.min.js"></script>
+    <script src="http://isaachook.me/js/html5shiv-printshiv.min.js"></script>
+    <script src="http://isaachook.me/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="http://isaachook.me/js/modernizr.custom.71422.js"></script>
+    <script src="http://isaachook.me/js/learn.js"></script>
+    <script src="http://isaachook.me/js/hugo-learn.js"></script>
+    
+
+  </body>
+</html>
+
